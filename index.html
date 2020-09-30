@@ -61,38 +61,51 @@ HEADER
 
 ...................................... -->
     <header class="header">
-        <div class="header__title wow animate__animated animate__fadeInUp">Константин Суходолов</div>
-        <div class="header__slogan wow animate__animated animate__fadeInUpBig">Верстка сайтов на HTML и CSS<br> HTML5
-            CSS3 JS jQuery</div>
 
+        <div class="header__slider_left">
+            <button class="button__slider_left">
+            </button>
+        </div>
 
-        <!-- Link to open the modal -->
+        <div class="header__container">
+            <div class="header__title wow animate__animated animate__fadeInUp">Константин Суходолов
+            </div>
 
-        <div>
-            <a href="#ex1" rel="modal:open" class="button__plus wow animate__animated animate__fadeInUpBig">Свяжись со
-                мной</a>
+            <div class="header__slogan wow animate__animated animate__fadeInUpBig">Верстка сайтов на HTML и CSS<br>
+                HTML5
+                CSS3 JS jQuery
+            </div>
+
+            <div class="header__arrow wow animate__animated animate__fadeIn">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+
+            <div>
+                <a href="#ex1" rel="modal:open" class="button__plus wow animate__animated animate__fadeInUpBig">Свяжись
+                    со
+                    мной</a>
+            </div>
+
+            <div id="ex1" class="modal">
+                <p class="ex1__info"><b>Опишите свой вопрос и я постараюсь ответить как можно скорее:)</b></p>
+                <form class="question">
+                    <p><b>Тема:</b></p>
+                    <input type="text" name="name" class="name">
+                    <p><b>Описание:</b></p>
+                    <textarea name="message" wrap="off" class="message">
+                        </textarea>
+                    <input type="submit" name="btn" class="btn">
+                </form>
+            </div>
         </div>
 
 
-        <!-- Modal HTML embedded directly into document -->
-        <div id="ex1" class="modal">
-            <p class="ex1__info"><b>Опишите свой вопрос и я постараюсь ответить как можно скорее:)</b></p>
-            <form class="question">
-                <p><b>Тема:</b></p>
-                <input type="text" name="name" class="name">
-                <p><b>Описание:</b></p>
-                <textarea name="message" wrap="off" class="message">
-                    </textarea>
-                <input type="submit" name="btn" class="btn">
-            </form>
+        <div class="header__slider_right">
+            <button class="button__slider_right"></button>
         </div>
 
 
 
-
-        <div class="header__arrow wow animate__animated animate__fadeIn">
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </div>
     </header>
 
 

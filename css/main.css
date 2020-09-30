@@ -73,16 +73,23 @@ font-family: 'Playfair Display', serif;
     text-align: center;
     
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+   
     
-    position: relative;
+    
      
 }
 
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
 .header__title {
-    font-size: 34px;
+    font-size: 30px;
     margin-bottom: 30px;
     font-family: 'Playfair Display', serif;
     margin-top: -50px;
@@ -107,6 +114,79 @@ font-family: 'Playfair Display', serif;
     left: 50%;
 }
 
+.header__slider_left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/bg/bg-header2.jpg");
+    height: 100%;
+    width: 20%;
+    border-right: 1px solid #fff;
+    transition: all 1s; 
+    opacity: 0;
+}
+
+
+        .header__slider_left:hover {
+            transition: all 1s;                    
+            opacity: 0.5;
+        }
+
+        .button__slider_left {
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            border: 1px solid #fff;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            transition: 1s;
+        }
+
+        .button__slider_left:hover {
+            background-color: #fff;
+        }
+
+        .button__slider_left:active, .button__slider_left:focus {
+            outline: none;
+          }
+
+
+.header__slider_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/bg/bg-header2.jpg");
+    padding-left: 20px;
+    width: 20%;
+    border-left: 1px solid  #FFF;
+    transition: 1s;
+    opacity: 0;
+}
+
+        .header__slider_right:hover {
+            transition: all 1s;           
+            opacity: 1;
+        }
+
+        .button__slider_right {
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            border: 1px solid #fff;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            transition: 1s;
+         }
+        
+                .button__slider_right:hover {
+                    background-color: #fff;
+                }
+        
+                .button__slider_right:active, .button__slider_right:focus {
+                    outline: none;
+                  }
 
 
 /* ........................................
@@ -374,23 +454,18 @@ p.footer__social-icons a:hover {
         width: 100%;   
         margin: 0;
         margin-bottom: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
         text-align: center;
         
     }
     
-    .header {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
     
     .header__title {
         font-family: Roboto;
         font-weight: bold;
-        font-size: 38px;
+        font-size: 30px;
         line-height: 48px;
         margin-bottom: 15px;
+        filter: invert(2) grayscale(2) contrast(9);
     }
     
     .header_slogan {
