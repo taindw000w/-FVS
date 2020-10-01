@@ -114,6 +114,15 @@ font-family: 'Playfair Display', serif;
     left: 50%;
 }
 
+
+    /****** 
+      
+      
+      Block slider left
+
+
+      **********/ 
+
 .header__slider_left {
     display: flex;
     align-items: center;
@@ -132,9 +141,21 @@ font-family: 'Playfair Display', serif;
             opacity: 0.5;
         }
 
+
+      /****** 
+      
+      
+      Button slider left
+
+
+      **********/  
+
+
         .button__slider_left {
             display: flex;
+            cursor: pointer;
             justify-content: center;
+            align-items: center;
             background-color: transparent;
             border: 1px solid #fff;
             width: 80px;
@@ -150,6 +171,24 @@ font-family: 'Playfair Display', serif;
         .button__slider_left:active, .button__slider_left:focus {
             outline: none;
           }
+
+          .straing__left {
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 10px solid gray;
+
+        }
+
+
+          /****** 
+      
+      
+      Block slider right
+
+
+      **********/ 
 
 
 .header__slider_right {
@@ -169,10 +208,21 @@ font-family: 'Playfair Display', serif;
             opacity: 1;
         }
 
+
+         /****** 
+      
+      
+      Button slider right
+
+
+      **********/ 
+
         .button__slider_right {
             display: flex;
             justify-content: center;
+            align-items: center;
             background-color: transparent;
+            cursor: pointer;
             border: 1px solid #fff;
             width: 80px;
             height: 80px;
@@ -186,6 +236,16 @@ font-family: 'Playfair Display', serif;
         
                 .button__slider_right:active, .button__slider_right:focus {
                     outline: none;
+                  }
+
+
+                  .straing__right {
+                      width: 0;
+                      height: 0;
+                      border-top: 5px solid transparent;
+                      border-bottom: 5px solid transparent;
+                      border-left: 10px solid gray;
+
                   }
 
 
