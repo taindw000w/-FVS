@@ -311,8 +311,83 @@ header::before {
     text-align: center;
 }
 
+
+
+        /*---------------
+        FIRST IMAGE str  347
+        ------ */
+
+
 .portfolio-item__img {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.portfolio-item__img img {
+    width: 100%;
+}
+
+.portfolio-item__img::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -6px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: linear-gradient(50%);
+    transition: .5s linear;
+}
+
+.portfolio-item__img:hover::before {
+    width: 0;
+}
+
+.portfolio-item__img:nth-child(1)::before {
+    background-image: url(../img/portfolio/project_organica.jpg);  
+}
+
+
+
+        /*---------------
+                SECOND IMAGE str 391
+        ------ */
+
+.portfolio-item__img-two {
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item__img-two img {
+    width: 100%;
+}
+
+
+
+.portfolio-item__img-two::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -6px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: linear-gradient(50%);
+    transition: .5s linear;
+}
+
+.portfolio-item__img-two:hover::before {
+    width: 0;
+}
+
+
+.portfolio-item__img-two:nth-child(1)::before {
+    background-image: url(../img/portfolio/project_apollo.jpg);
 }
 
 .portfolio-item__img img {
