@@ -172,7 +172,7 @@ header::before {
     height: 100%;
     width: 20%;
     transition: all 1s; 
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 
@@ -241,7 +241,7 @@ header::before {
     padding-left: 20px;
     width: 20%;
     transition: 1s;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
         .header__slider_right:hover {
