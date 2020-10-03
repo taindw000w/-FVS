@@ -1,9 +1,22 @@
-html, body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+
+html {
+    height: 100%;  
     line-height: 1.5;
     min-width: 280px;
+    overflow: hidden;
+    
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 
 img {
     display: inline-block;
@@ -59,27 +72,55 @@ font-family: 'Playfair Display', serif;
 
 ........................................ */
 
-.header {
-    background: #343c4e;
-    background-image: url("../img/bg/bg-header2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
+header {
+
     height: 100vh;
     min-height: 400px;
+    width: 100vw;
     
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 8vw 0 5vw;
+    position: relative;
+
     color: #FFF;
     text-align: center;
     
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   
-    
+
+    transform-style: inherit;  
     
      
 }
+
+
+
+header, header:before {
+    background: 50% 50% / cover;
+
+}
+
+header::before {
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(../img/bg/bg-header2.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+
 
 .header__container {
     display: flex;
@@ -88,7 +129,7 @@ font-family: 'Playfair Display', serif;
 
 }
 
-.header__title {
+.header__title  {
     font-size: 30px;
     margin-bottom: 30px;
     font-family: 'Playfair Display', serif;
@@ -130,15 +171,14 @@ font-family: 'Playfair Display', serif;
     background-image: url("../img/bg/bg-header2.jpg");
     height: 100%;
     width: 20%;
-    border-right: 1px solid #fff;
     transition: all 1s; 
-    opacity: 0;
+    opacity: 0.5;
 }
 
 
         .header__slider_left:hover {
             transition: all 1s;                    
-            opacity: 0.5;
+            opacity: 0.8;
         }
 
 
@@ -158,6 +198,7 @@ font-family: 'Playfair Display', serif;
             align-items: center;
             background-color: transparent;
             border: 1px solid #fff;
+            color: #2a150d;
             width: 80px;
             height: 80px;
             border-radius: 50%;
@@ -165,7 +206,8 @@ font-family: 'Playfair Display', serif;
         }
 
         .button__slider_left:hover {
-            background-color: #fff;
+            background-color: #FFFFFF;
+            
         }
 
         .button__slider_left:active, .button__slider_left:focus {
@@ -198,14 +240,13 @@ font-family: 'Playfair Display', serif;
     background-image: url("../img/bg/bg-header2.jpg");
     padding-left: 20px;
     width: 20%;
-    border-left: 1px solid  #FFF;
     transition: 1s;
-    opacity: 0;
+    opacity: 0.5;
 }
 
         .header__slider_right:hover {
             transition: all 1s;           
-            opacity: 1;
+            opacity: 0.8;
         }
 
 
@@ -223,7 +264,7 @@ font-family: 'Playfair Display', serif;
             align-items: center;
             background-color: transparent;
             cursor: pointer;
-            border: 1px solid #fff;
+            border: 1px solid #FFFFFF;
             width: 80px;
             height: 80px;
             border-radius: 50%;
@@ -231,7 +272,7 @@ font-family: 'Playfair Display', serif;
          }
         
                 .button__slider_right:hover {
-                    background-color: #fff;
+                    background-color: #FFFFFF;                  
                 }
         
                 .button__slider_right:active, .button__slider_right:focus {
@@ -255,7 +296,7 @@ font-family: 'Playfair Display', serif;
 
 ........................................ */
 .portfolio {
-    padding-top: 150px;
+    padding-top: 550px;
     padding-bottom: 100px;
 }
 
@@ -457,13 +498,14 @@ p.footer__social-icons a:hover {
     text-decoration: none;
     text-transform: uppercase;
     color: Black;
+    
 
     
        
 }
 
 .button__plus:hover {
-    color: #FFF;
+    color: white;
     background-color: Black;
 }
 
@@ -525,7 +567,6 @@ p.footer__social-icons a:hover {
         font-size: 30px;
         line-height: 48px;
         margin-bottom: 15px;
-        filter: invert(2) grayscale(2) contrast(9);
     }
     
     .header_slogan {
@@ -534,7 +575,7 @@ p.footer__social-icons a:hover {
     }
     
     .portfolio {
-        padding-top: 40px;
+        padding-top: 580px;
         padding-bottom: 50px;
     }
     
