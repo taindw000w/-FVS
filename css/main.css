@@ -557,7 +557,7 @@ p.footer__social-icons a:hover {
     display: inline-block;
     
     border-width: 1px;
-    border-color: Black;
+    border-color: #2d3436;
     border-style: solid;
     border-radius: 50px;
     
@@ -567,12 +567,14 @@ p.footer__social-icons a:hover {
     padding-left: 17px;
     padding-right: 17px;
     
-    transition: 0.2s ease-out;
+    transition: 0.8s ease-out;
     font-size: 12px;
     font-family: sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     color: Black;
+    position: relative;
+    overflow: hidden;
     
 
     
@@ -581,8 +583,41 @@ p.footer__social-icons a:hover {
 
 .button__plus:hover {
     color: white;
-    background-color: Black;
 }
+
+.button__plus::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: #2d3436;
+    z-index: -1;
+    transition: 0.8s;
+    border-radius: 0 0 50% 50%;
+    
+}
+
+.button__plus:hover::before {
+    height: 180%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .name {
     padding: 10px;
